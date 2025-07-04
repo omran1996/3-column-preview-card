@@ -1,0 +1,102 @@
+/* ========== 1. Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== 2. Base Styles ========== */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 20%);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ========== 3. Layout ========== */
+.cards-container {
+  display: flex;
+  max-width: 960px;
+  margin: 100px auto;
+  border-radius: 8px;
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.card.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 30px;
+}
+.card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: hsla(0, 0%, 100%, 0.75); 
+}
+.card .btn {
+  color: inherit;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+/* ========== 6. Responsive ========== */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+   /*  margin: 50px 20px; */
+  }
+
+  .card {
+    border-radius: 8px;
+  }
+
+  .card:not(:last-child) {
+     margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
