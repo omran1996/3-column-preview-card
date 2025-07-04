@@ -18,8 +18,8 @@ body {
 /* ========== 3. Layout ========== */
 .cards-container {
   display: flex;
-  max-width: 960px;
-  margin: 100px auto;
+  max-width: 1016px;
+  margin: 170px auto;
   border-radius: 8px;
   overflow: hidden; 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ body {
 @media (max-width: 768px) {
   .cards-container {
     flex-direction: column;
-   /*  margin: 50px 20px; */
+    margin: 50px 20px;
   }
 
   .card {
